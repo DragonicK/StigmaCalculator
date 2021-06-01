@@ -1,0 +1,192 @@
+body {
+    font-family: Optima;
+    background-image: linear-gradient(black, rgb(33, 100, 200), black);
+    background-repeat: no-repeat;
+}
+
+#description {
+    font-size: 12px;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    color: white;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: rgb(44, 44, 44);
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+#classes {
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stigma-classes {
+    padding-left: 35%;
+    padding-right: 35%;
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stigma-slots {
+    background: url('../img/skills/bg.jpg') no-repeat;
+    width: 400px;
+    height: 316px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    position: relative;
+    background-position: 0 -318px;
+}
+
+#stigma-slot-container {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#stigma-slot-0 {
+    position: absolute;
+    top: 11px;
+    left: 157px;
+}
+
+#stigma-slot-1 {
+    position: absolute;
+    top: 80px;
+    left: 51px;
+}
+
+#stigma-slot-2 {
+    position: absolute;
+    top: 80px;
+    left: 260px;
+}
+
+#stigma-slot-3 {
+    position: absolute;
+    top: 190px;
+    left: 252px;
+}
+
+#stigma-slot-4 {
+    position: absolute;
+    top: 234px;
+    left: 157px;
+}
+
+#stigma-slot-5 {
+    position: absolute;
+    top: 190px;
+    left: 62px;
+}
+
+#stigma-slot-6 {
+    position: absolute;
+    top: 116px;
+    left: 160px;
+}
+
+#close  {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#border-slot {
+    width: 74px;
+    height: 78px;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stigma-slot-icon {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 20px;
+    left: 24px;
+}
+
+.close-button {
+    background: url('../img/close.png') no-repeat;
+    margin-top: -5px;
+    margin-left: -15px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-position: 0px 0px;
+}
+    .close-button:hover {
+        background-position: -22px 0px;
+    }
+
+.slot-gold {
+    background: url('../img/skills/gold_slots.png') no-repeat;
+    width: 85px;
+    height: 78px;
+    display: inline-block;
+    background-position: 0px -78px;
+}
+    .slot-gold:hover {
+        background-position: 0px 0px;
+    }
+
+.slot-green {
+    background: url('../img/skills/green_slots.png') no-repeat;
+    width: 85px;
+    height: 78px;
+    display: inline-block;
+    background-position: 0px -78px;
+}
+    .slot-green:hover {
+        background-position: 0px 0px;
+    }
+
+.slot-blue {
+    background: url('../img/skills/blue_slots.png') no-repeat;
+    width: 85px;
+    height: 78px;
+    display: inline-block;
+    background-position: 0px -78px;
+}
+    .slot-blue:hover {
+        background-position: 0px 0px;
+    }
+
+.class-img {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+    transition: opacity .8s;
+}
+    .class-img:hover {
+        opacity: 1;
+    }
+
+.class-stigma {
+    border-color: rgb(50, 190, 199);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+    transition: opacity .5s;
+}
+    .class-stigma:hover {
+        opacity: 1;
+    }

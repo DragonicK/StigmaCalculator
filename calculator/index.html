@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stigma Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/stigmas.css" />
+</head>
+
+<body onload="OnClassChange('gladiator')">
+
+    <div id="classes">
+        <img class="class-img" src="img/classes/icon-class_warrior_gladiator.png" type="button" onclick="OnClassChange('gladiator')" />
+        <img class="class-img" src="img/classes/icon-class_warrior_templar.png" type="button" onclick="OnClassChange('templar')" />
+        <img class="class-img" src="img/classes/icon-class_scout_assassin.png" type="button" onclick="OnClassChange('assassin')" />
+        <img class="class-img" src="img/classes/icon-class_scout_ranger.png" type="button" onclick="OnClassChange('ranger')" />
+        <img class="class-img" src="img/classes/icon-class_priest_chanter.png" type="button" onclick="OnClassChange('chanter')" />
+        <img class="class-img" src="img/classes/icon-class_priest_cleric.png" type="button" onclick="OnClassChange('cleric')" />
+        <img class="class-img" src="img/classes/icon-class_mage_spiritmaster.png" type="button" onclick="OnClassChange('spiritmaster')" />
+        <img class="class-img" src="img/classes/icon-class_mage_sorcerer.png" type="button" onclick="OnClassChange('sorcerer')" />
+    </div>
+
+    <hr style="border-top: 1px solid white; margin-left:10%; margin-right: 10%;" />
+
+    <div id="stigma-classes">
+
+    </div>
+
+    <div id="stigma-slot-container">
+        <div id="stigma-slots">
+            <span id="close" class="close-button" type="button" onclick="OnClose()"></span>
+
+            <img id="border-slot" src="img/gear_slot_border.png" />
+
+            <span id="stigma-slot-0" class="slot-gold" onclick="OnSelect(0)">
+                <img id="stigma-icon-0" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 0)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-1" class="slot-gold" onclick="OnSelect(1)">
+                <img id="stigma-icon-1" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 1)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-2" class="slot-gold" onclick="OnSelect(2)">
+                <img id="stigma-icon-2" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 2)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-3" class="slot-gold" onclick="OnSelect(3)">
+                <img id="stigma-icon-3" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 3)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-4" class="slot-gold" onclick="OnSelect(4)">
+                <img id="stigma-icon-4" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 4)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-5" class="slot-gold" onclick="OnSelect(5)">
+                <img id="stigma-icon-5" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 5)" onmouseout="OnMouseOut()" />
+            </span>
+
+            <span id="stigma-slot-6" class="slot-gold" onclick="OnSelect(6)">
+                <img id="stigma-icon-6" class="stigma-slot-icon" onmouseover="OnEquippedMouseOver(event, 6)" onmouseout="OnMouseOut()" />
+            </span>
+        </div>
+
+        <div id="description">
+            <span>Righteous Blow</span>
+            <br />
+            <b></b>Class: Templar
+            Level: 66
+            Category: Active
+            Skill Type: Normal
+            Attribute: Attack
+            <hr style="border-top: 1px solid white; margin-left: 5%; margin-right: 5%;" />
+            Target: Selected Target
+            Usage Cost: 250 MP
+            Cast Time: 60s
+            Cooldown: 16s
+            Available when equipping Melee Weapon
+            <hr style="border-top: 1px solid white; margin-left: 5%; margin-right: 5%;" />
+            Inflicts 1182-1186 physical damage to a stunned or stumbled target.
+        </div>
+    </div>
+
+    <div style="height: 300px; width: 100%; bottom: 0px">
+
+    </div>
+
+    <script type="text/javascript" src="js/skills.js"></script>
+    <script type="text/javascript" src="js/stigmas.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
